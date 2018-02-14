@@ -5,54 +5,107 @@ Maintainer: #USERNAME# <#EMAIL#>
 Build-Depends: #BUILD_DEPS#
 Standards-Version: #POLICY#
 
-Package: #PACKAGE#-desktop
+
+Package: #PACKAGE#-base
 Architecture: any
-Depends: autoconf,
-         automake,
-         bash-completion,
-         blueman,
+Depends: bash-completion,
          borgbackup,
-         build-essential,
          command-not-found,
          console-setup,
          curl,
          debootstrap,
-         deluge,
-         dunst,
+         gdebi,
+         gnupg,
+         htop,
+         inetutils-ping,
+         iproute2,
+         less,
+         libnotify-bin,
+         locales,
+         neovim,
+         net-tools,
+         network-manager,
+         openssh-client,
+         p7zip-full,
+         silversearcher-ag,
+         socat,
+         sudo,
+         systemd-container,
+         tmux,
+         ubuntu-archive-keyring,
+         ufw,
+         unzip,
+         usbutils,
+         wget,
+         zip,
+         ${shlibs:Depends},
+         ${misc:Depends}
+Description: #PACKAGE#-base meta package
+ Basic software I use in a Debian system.
+
+
+Package: #PACKAGE#-devel
+Architecture: any
+Depends: autoconf,
+         automake,
+         build-essential,
+         bzr,
+         cmake,
+         git,
+         python3-setuptools,
+         python3-wheel,
+         python3-stdeb,
+         python-setuptools,
+         python-wheel,
+         #PACKAGE#-base,
+         ${shlibs:Depends},
+         ${misc:Depends}
+Description: #PACKAGE#-devel meta package
+ Tools for software development
+
+
+Package: #PACKAGE#-desktop
+Architecture: any
+Depends: deluge,
          firefox-esr,
          fonts-cantarell,
          fonts-dejavu,
          fonts-ipafont,
          fonts-liberation,
          fonts-vlgothic,
-         gdebi,
-         git,
-         gnupg,
          graphicsmagick-imagemagick-compat,
          gtk-chtheme,
-         htop,
          i3,
          i3status,
-         inetutils-ping,
-         iproute2,
          keepass2,
-         less,
-         libnotify-bin,
          lightdm,
          light-locker,
-         locales,
          lxappearance,
          mpv,
-         neovim,
-         net-tools,
-         network-manager,
          network-manager-gnome,
-         openssh-client,
-         p7zip-full,
          pasystray,
          pavucontrol,
          pcmanfm,
          pinentry-gtk2,
+         qt4-qtconfig,
+         rofi,
+         rxvt-unicode-256color,
+         smplayer,
+         xorg,
+         xsel,
+         zbar-tools,
+         #PACKAGE#-devel,
+         ${shlibs:Depends},
+         ${misc:Depends}
+Description: #PACKAGE#-desktop meta package
+ My preferred X window manager + applications.
+
+
+Package: #PACKAGE#-desktop-baremetal
+Architecture: any
+Depends: blueman,
+         dunst,
+         libvirt-daemon-system,
          pulseaudio,
          pulseaudio-module-bluetooth,
          pulseaudio-module-jack,
@@ -60,32 +113,12 @@ Depends: autoconf,
          pulseaudio-module-raop,
          pulseaudio-module-zeroconf,
          pulseaudio-utils,
-         python3-pip,
-         python3-setuptools,
-         python3-wheel,
-         python-pip,
-         python-setuptools,
-         python-wheel,
-         qt4-qtconfig,
-         rofi,
-         rxvt-unicode-256color,
-         silversearcher-ag,
-         smplayer,
-         socat,
-         sudo,
-         systemd-container,
-         tmux,
-         ubuntu-archive-keyring,
+         qemu-kvm,
          udiskie,
-         ufw,
-         unzip,
-         usbutils,
-         wget,
-         xorg,
-         xsel,
-         zbar-tools,
-         zip,
+         virt-manager,
+         xserver-xephyr,
+         #PACKAGE#-desktop,
          ${shlibs:Depends},
          ${misc:Depends}
 Description: #PACKAGE#-desktop meta package
- Metapackage for my preferred window manager + applications.
+ Only stuff I install on bare metal and not on containers/VMs.
