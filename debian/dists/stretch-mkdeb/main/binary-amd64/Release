@@ -1,0 +1,5 @@
+Component: main
+Origin: mkdeb
+Label: mkdeb
+Architecture: amd64
+Description: Personal package repository for tpadilha84@gmail.com

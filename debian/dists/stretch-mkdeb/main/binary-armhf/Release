@@ -1,0 +1,5 @@
+Component: main
+Origin: mkdeb
+Label: mkdeb
+Architecture: armhf
+Description: Personal package repository for tpadilha84@gmail.com
