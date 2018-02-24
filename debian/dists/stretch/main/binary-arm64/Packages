@@ -1,0 +1,32 @@
+Package: flix
+Version: 1526301990-1
+Architecture: all
+Maintainer: Thiago de Arruda <tpadilha84@gmail.com>
+Installed-Size: 46881
+Depends: nodejs
+Priority: optional
+Section: misc
+Filename: pool/main/f/flix/flix_1526301990-1_all.deb
+Size: 5092834
+SHA256: 4a6ab63c391de7620d0ef49e79db5762fc0b39632ef81143169d1f8eaad607bc
+SHA1: f79c85318edb59006f51b3fe9751e22987c2219c
+MD5sum: 36b1319c0960a64249c66b57925a3c7e
+Description: Torrent streaming via command-line
+
+Package: python3-ush
+Source: ush
+Version: 3.1.0-1
+Architecture: all
+Maintainer: Thiago de Arruda <tpadilha84@gmail.com>
+Installed-Size: 41
+Depends: python3:any (>= 3.3.2-2~)
+Homepage: https://github.com/tarruda/python-ush
+Priority: optional
+Section: devel
+Filename: pool/main/u/ush/python3-ush_3.1.0-1_all.deb
+Size: 8096
+SHA256: 5924891194d513e0ad8829a2c24ee86f4a681d211d0d3bf6f9fb776ab43efbad
+SHA1: e69d5727844292c4c007fe54b0227b3a56801719
+MD5sum: 83f2a31dd82fd4ab3743028455f501a4
+Description: Powerful API for invoking with external commands
+
