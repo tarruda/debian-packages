@@ -1,17 +1,17 @@
 Package: mkdeb
-Version: 0.0.4-1
+Version: 0.0.5-1
 Architecture: all
 Maintainer: Thiago de Arruda <tpadilha84@gmail.com>
-Installed-Size: 33
+Installed-Size: 32
 Depends: python3:any (>= 3.3.2-2~), python3-ush, lsb-release, dh-make, devscripts, apt-show-source, python3-stdeb, python-stdeb
 Homepage: https://github.com/tarruda/mkdeb
 Priority: optional
 Section: devel
-Filename: pool/main/m/mkdeb/mkdeb_0.0.4-1_all.deb
-Size: 5676
-SHA256: a1b00729417865694df9d52217c4ebdec3ad76366abc22f8d220d056ddda0438
-SHA1: 416830121cb963c4122f55500bd0262c3e4cb5d9
-MD5sum: f7c2ed05236ffc455fcfcad4bd81bca2
+Filename: pool/main/m/mkdeb/mkdeb_0.0.5-1_all.deb
+Size: 5392
+SHA256: fc0d3ee93b781a1a5641a85265854c8027cf06b675d3b3c1c3d4937061e3b639
+SHA1: e396176c0f3d25329db0b780308af9def5fa0192
+MD5sum: 1bb04d03975b5527abee4215b917950e
 Description: Simplified creation/customization of debian packages
 
 Package: personal-workstation-base
@@ -24,10 +24,10 @@ Depends: bash-completion, borgbackup, command-not-found, console-setup, curl, de
 Priority: optional
 Section: misc
 Filename: pool/main/p/personal-workstation/personal-workstation-base_1_amd64.deb
-Size: 2228
-SHA256: 0eab4379ffa650645ba13a74a9c577bc4f5783791c7896cfd46dc1ad9325ff1a
-SHA1: 6ca28095f0e0d85bd1d6b465df3a68a1ef8dab92
-MD5sum: c2534b1d0a6e796d4b0a8e79fc8c0c44
+Size: 2226
+SHA256: 6d1e45f74925cd9f36bac6486521a7f024cdfa0c9c93e19c6d7cf4f4b5e7682e
+SHA1: 832d79dbd63886399fce05b2b3cd94cbbefba9df
+MD5sum: 0f6d1d9098b8d0f0a1453a1050f63a2c
 Description: personal-workstation-base meta package
  Basic software I use in a Debian system.
 
@@ -41,10 +41,10 @@ Depends: deluge, firefox-esr, fonts-cantarell, fonts-dejavu, fonts-ipafont, font
 Priority: optional
 Section: misc
 Filename: pool/main/p/personal-workstation/personal-workstation-desktop_1_amd64.deb
-Size: 2102
-SHA256: f8c939034a4401899f312a11eaa693fdec294a12e07b095069059da22482fee2
-SHA1: 497efed48d85273733c0bce700d36c1f9a36e113
-MD5sum: 2e44d9d83b5402057433d2c3f7f7d149
+Size: 2100
+SHA256: fa075d75366411a1a3ef54ce17c93574ebe78b68de4a53f594daeacf807ef5ea
+SHA1: 88b0b9b205c2a6f26e6ea11c859d6d82383ca47f
+MD5sum: 85c889ceaadddef30f39c8c435f51b1b
 Description: personal-workstation-desktop meta package
  My preferred X window manager + applications.
 
@@ -58,10 +58,10 @@ Depends: blueman, dunst, libvirt-daemon-system, pulseaudio, pulseaudio-module-bl
 Priority: optional
 Section: misc
 Filename: pool/main/p/personal-workstation/personal-workstation-desktop-baremetal_1_amd64.deb
-Size: 2014
-SHA256: 2620713845df144bf55f8f800112e154ce5044be5c896e79129b026e6bbd7cd2
-SHA1: 6bea0b88282eb8e8447b3d84ace95774e26a2f63
-MD5sum: 8a1182dc238c3b0e3c1d4b6ec1bd0af9
+Size: 2012
+SHA256: 05ab0ade05c2b04cc0875c2321341e45cfe859d7c0bae02d16cf9f7831fc0702
+SHA1: b1d4731eb5a5b0079deca993b264358fe0de9bbd
+MD5sum: 425d7343b97f316ef0629dd9dd0772a6
 Description: personal-workstation-desktop meta package
  Only stuff I install on bare metal and not on containers/VMs.
 
@@ -75,10 +75,10 @@ Depends: autoconf, automake, build-essential, bzr, cmake, git, python3-setuptool
 Priority: optional
 Section: misc
 Filename: pool/main/p/personal-workstation/personal-workstation-devel_1_amd64.deb
-Size: 1934
-SHA256: d41da39f6d55a7469b6b2e1fb391c16c15486639b752948bb84fc492c850dc4c
-SHA1: 2704d7e1881bd11275412307a395d2404928e74e
-MD5sum: ce2b3800050ed81ad66bc755c64f0571
+Size: 1936
+SHA256: 8e6371666f9a2036edd6b6438a45d7e44e5b4c5c6a35421533ace30c04b4e862
+SHA1: 35f9edc2e7caacf1fb2e2b6ad1327060c9d14ef9
+MD5sum: 73138b3d03053d2d92235a632421c8b1
 Description: personal-workstation-devel meta package
  Tools for software development
 
@@ -94,9 +94,9 @@ Priority: optional
 Section: python
 Filename: pool/main/u/ush/python3-ush_2.1.0-1_all.deb
 Size: 7080
-SHA256: 34eceb68471af6df8b1f6b8de6926255b26cf552b3ba0a6ea949c4f63aaaef4f
-SHA1: 22e261adda24c29f77d88db526350f751b53002c
-MD5sum: 42b3ffd4ee205d78b0506122f0a0e317
+SHA256: e1d44dabc0d62df737c17fbb42349976959ea1d77920352bc3e7438a882ef7e0
+SHA1: 74140029a553ec061c42e585c54e2d044bc220f0
+MD5sum: 966f39d025c047cb0e0beac96f545ea6
 Description: Powerful API for invoking with external commands
 
 Package: qemu-system-x86
@@ -104,7 +104,7 @@ Source: qemu
 Version: 1:2.8+dfsg-6+deb9u3.1
 Architecture: amd64
 Maintainer: Debian QEMU Team <pkg-qemu-devel@lists.alioth.debian.org>
-Installed-Size: 21475
+Installed-Size: 21483
 Depends: libaio1 (>= 0.3.93), libasound2 (>= 1.0.16), libbluetooth3 (>= 4.91), libbrlapi0.6, libc6 (>= 2.15), libcacard0 (>= 2.2), libepoxy0 (>= 1.3), libfdt1, libgbm1 (>= 7.11~1), libgcc1 (>= 1:3.4), libglib2.0-0 (>= 2.31.8), libgnutls30 (>= 3.5.6), libjpeg62-turbo (>= 1.3.1), libncursesw5 (>= 6), libnettle6, libnuma1 (>= 2.0.11), libpixman-1-0 (>= 0.19.6), libpng16-16 (>= 1.6.2-1), libpulse0 (>= 0.99.1), libsasl2-2, libsdl1.2debian (>= 1.2.11), libseccomp2 (>= 2.1.0), libspice-server1 (>= 0.12.6), libtinfo5 (>= 6), libusb-1.0-0 (>= 2:1.0.19), libusbredirparser1 (>= 0.6), libvdeplug2, libx11-6, libxen-4.8 (>= 4.8.3+comet2+shim4.10.0+comet3), libxenstore3.0 (>= 4.1.0~rc6), zlib1g (>= 1:1.2.0), qemu-system-common (>> 2.0.0+dfsg-7~), seabios (>= 1.10.2-1~), ipxe-qemu (>= 1.0.0+git-20131111.c3d1e78-1~)
 Recommends: qemu-utils
 Suggests: samba, vde2, qemu-block-extra (= 1:2.8+dfsg-6+deb9u3.1), kmod, sgabios, ovmf
@@ -116,10 +116,10 @@ Homepage: http://www.qemu.org/
 Priority: optional
 Section: otherosfs
 Filename: pool/main/q/qemu/qemu-system-x86_2.8+dfsg-6+deb9u3.1_amd64.deb
-Size: 4814144
-SHA256: b865dc3d86e37d403b343a813498085cff130ddc94023741bbdb6f7013bf767c
-SHA1: 07f34cc6b639f364b170a7b54162202d6bcaa469
-MD5sum: 8df40cf17e8f69f23f068c669a0f9258
+Size: 4804132
+SHA256: b59ec4dfd6941ef24d5724168424a0feb4cd45e94a742a0c9b9c059582db6e8a
+SHA1: fab279598bb533f74ea9fd8069db6b7edb18aca3
+MD5sum: 9929a0aab7b3761040525286ac35ae78
 Description: QEMU full system emulation binaries (x86)
  QEMU is a fast processor emulator: currently the package supports
  i386 and x86-64 emulation. By using dynamic translation it achieves
@@ -149,10 +149,10 @@ Homepage: https://www.x.org/
 Priority: optional
 Section: x11
 Filename: pool/main/x/xorg-server/xserver-xephyr_1.19.2-1+deb9u2.1_amd64.deb
-Size: 2952530
-SHA256: a795d22b19645e1f4ab2fde10a78b38d32e9defd52e9b83708511350b6c42431
-SHA1: 9d92f6af35b71760b53d889a421999d57694e5f2
-MD5sum: cb9f50d45feb00d1a2aaef237763c788
+Size: 2953416
+SHA256: 902c5c7c501d6686ef8a7b318b929b919fab113c4835d390d38c583ea2fce525
+SHA1: dd61665b97539fd2c6c043acdb43152d4bfb741b
+MD5sum: d0e64f280b55a98c190fd534a4f3d37f
 Description: nested X server
  Xephyr is an X server that can be run inside another X server,
  much like Xnest. It is based on the kdrive X server, and as a

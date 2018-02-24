@@ -1,17 +1,17 @@
 Package: mkdeb
-Version: 0.0.4-1
+Version: 0.0.5-1
 Architecture: all
 Maintainer: Thiago de Arruda <tpadilha84@gmail.com>
-Installed-Size: 33
+Installed-Size: 32
 Depends: python3:any (>= 3.3.2-2~), python3-ush, lsb-release, dh-make, devscripts, apt-show-source, python3-stdeb, python-stdeb
 Homepage: https://github.com/tarruda/mkdeb
 Priority: optional
 Section: devel
-Filename: pool/main/m/mkdeb/mkdeb_0.0.4-1_all.deb
-Size: 5676
-SHA256: a1b00729417865694df9d52217c4ebdec3ad76366abc22f8d220d056ddda0438
-SHA1: 416830121cb963c4122f55500bd0262c3e4cb5d9
-MD5sum: f7c2ed05236ffc455fcfcad4bd81bca2
+Filename: pool/main/m/mkdeb/mkdeb_0.0.5-1_all.deb
+Size: 5392
+SHA256: fc0d3ee93b781a1a5641a85265854c8027cf06b675d3b3c1c3d4937061e3b639
+SHA1: e396176c0f3d25329db0b780308af9def5fa0192
+MD5sum: 1bb04d03975b5527abee4215b917950e
 Description: Simplified creation/customization of debian packages
 
 Package: python3-ush
@@ -26,8 +26,8 @@ Priority: optional
 Section: python
 Filename: pool/main/u/ush/python3-ush_2.1.0-1_all.deb
 Size: 7080
-SHA256: 34eceb68471af6df8b1f6b8de6926255b26cf552b3ba0a6ea949c4f63aaaef4f
-SHA1: 22e261adda24c29f77d88db526350f751b53002c
-MD5sum: 42b3ffd4ee205d78b0506122f0a0e317
+SHA256: e1d44dabc0d62df737c17fbb42349976959ea1d77920352bc3e7438a882ef7e0
+SHA1: 74140029a553ec061c42e585c54e2d044bc220f0
+MD5sum: 966f39d025c047cb0e0beac96f545ea6
 Description: Powerful API for invoking with external commands
 
