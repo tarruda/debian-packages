@@ -1,0 +1,8 @@
+[Unit]
+Description=Music Player Daemon socket
+
+[Socket]
+ListenStream=%t/mpd/socket
+
+[Install]
+WantedBy=sockets.target

@@ -1,0 +1,10 @@
+# The display number(%i) must be a value between 10 and 63.
+[Unit]
+Description=TCP Socket for Xephyr at display %i
+
+[Socket]
+ListenStream=60%i
+Backlog=1
+
+[Install]
+WantedBy=sockets.target

@@ -1,0 +1,9 @@
+[Unit]
+Description=Remap CapsLock to Ctrl in text mode
+
+[Service]
+ExecStart=/bin/sh -c "dumpkeys | sed '/keycode\\s\\+58/s!=.*!= Control!' | loadkeys -"
+
+[Install]
+WantedBy=multi-user.target 
+WantedBy=rescue.target 

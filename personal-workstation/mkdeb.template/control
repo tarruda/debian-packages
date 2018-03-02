@@ -2,13 +2,14 @@ Source: #PACKAGE#
 Section: misc
 Priority: optional
 Maintainer: #USERNAME# <#EMAIL#>
-Build-Depends: #BUILD_DEPS#
+Build-Depends: config-package-dev, #BUILD_DEPS#
 Standards-Version: #POLICY#
 
 
 Package: #PACKAGE#-base
 Architecture: any
 Depends: bash-completion,
+         beets,
          borgbackup,
          command-not-found,
          console-setup,
@@ -22,6 +23,8 @@ Depends: bash-completion,
          less,
          libnotify-bin,
          locales,
+         mpc,
+         mpd,
          neovim,
          net-tools,
          network-manager,
@@ -122,3 +125,11 @@ Depends: blueman,
          ${misc:Depends}
 Description: #PACKAGE#-desktop meta package
  Only stuff I install on bare metal and not on containers/VMs.
+
+
+Package: #PACKAGE#-config
+Architecture: any
+Depends: #PACKAGE#-desktop-baremetal,
+         ${shlibs:Depends},
+         ${misc:Depends}
+Description: Configuration package.

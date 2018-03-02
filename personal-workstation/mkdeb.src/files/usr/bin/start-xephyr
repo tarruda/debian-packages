@@ -1,0 +1,8 @@
+#!/bin/sh
+
+display=$1
+screen=$(xdpyinfo | awk '/dimensions/{print $2}')
+dpi=$(xdpyinfo | awk '/resolution/{print $2}' | awk -Fx '{print $1}')
+
+exec /usr/bin/Xephyr :$display -nolisten tcp -noreset -ac -screen $screen \
+	-dpi $dpi -name xephyr-${display}
