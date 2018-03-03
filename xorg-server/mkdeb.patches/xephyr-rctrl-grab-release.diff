@@ -1,3 +1,4 @@
+cl: Use right ctrl as grab/release key for Xephyr
 diff --git a/debian/patches/xephyr-rctrl-grab-release.diff b/debian/patches/xephyr-rctrl-grab-release.diff
 new file mode 100644
 index 0000000..89f2339

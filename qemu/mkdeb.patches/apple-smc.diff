@@ -1,3 +1,4 @@
+cl: Apply apple-smc fix to allow sierra guests. More details: https://www.contrib.andrew.cmu.edu/~somlo/OSXKVM/
 diff --git a/debian/patches/series b/debian/patches/series
 index 5143af1..eb9b6bf 100644
 --- a/debian/patches/series
