@@ -1,0 +1,26 @@
+#!/usr/bin/make -f
+
+include /usr/share/dpkg/architecture.mk
+include /usr/share/dpkg/buildflags.mk
+
+export CFLAGS CPPFLAGS LDFLAGS
+
+ifneq (,$(filter noopt,$(DEB_BUILD_OPTIONS)))
+	CONFIG = debug
+else
+	CONFIG = release
+endif
+
+ARGS = config=$(CONFIG) VERBOSE=1 PREFIX=/usr LIBDIR=/usr/lib/$(DEB_HOST_MULTIARCH)
+
+%:
+	dh $@ --parallel
+
+override_dh_auto_build-arch:
+	$(MAKE) $(ARGS)
+
+override_dh_auto_install-arch:
+	$(MAKE) $(ARGS) DESTDIR=$(CURDIR)/debian/tmp install
+
+override_dh_auto_test:
+	$(MAKE) VERBOSE=1 test

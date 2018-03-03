@@ -1,0 +1,20 @@
+Source: #PACKAGE#
+Priority: optional
+Maintainer: #USERNAME# <#EMAIL#>
+Build-Depends: #BUILD_DEPS#
+Standards-Version: #POLICY#
+Section: libs
+Homepage: https://github.com/libmpack/libmpack
+Vcs-Git: https://github.com/libmpack/libmpack.git
+
+Package: #PACKAGE#-dev
+Section: libdevel
+Architecture: any
+Depends: #PACKAGE#0 (= ${binary:Version}), ${misc:Depends}
+Description: This package contains the headers files needed for developing
+  with #PACKAGE#.
+
+Package: #PACKAGE#0
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Efficient msgpack/mpack-rpc implementation

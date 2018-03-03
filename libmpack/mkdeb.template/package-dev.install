@@ -1,0 +1,4 @@
+usr/include/*
+usr/lib/*/libmpack.a
+usr/lib/*/libmpack.so
+usr/lib/*/pkgconfig/mpack.pc
